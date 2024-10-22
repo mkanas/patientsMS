@@ -8,9 +8,9 @@ import { Form } from '../ui/form'
 import CustomFormField from '../CustomFormField'
 import SubmitButton from '../SubmitButton'
 import { useState } from 'react'
-import { userFormValidation } from '@/lib/formValidation'
+import { UserFormValidation } from '@/lib/formValidation'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import router from 'next/router'
+import { useRouter } from 'next/navigation'
 import { createUser } from '@/lib/actions/patient.actions'
 
 export enum FormFieldType {
@@ -24,9 +24,10 @@ export enum FormFieldType {
 }
 
 const PatientForm = () => {
+  const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
-  const form = useForm<z.infer<typeof userFormValidation>>({
-    resolver: zodResolver(userFormValidation),
+  const form = useForm<z.infer<typeof UserFormValidation>>({
+    resolver: zodResolver(UserFormValidation),
     defaultValues: {
       name: '',
       email: '',
@@ -38,7 +39,7 @@ const PatientForm = () => {
     name,
     email,
     phone,
-  }: z.infer<typeof userFormValidation>) {
+  }: z.infer<typeof UserFormValidation>) {
     setIsLoading(true)
     try {
       // You can use your backend API here to create a new user.
