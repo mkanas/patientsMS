@@ -44,6 +44,19 @@ export const getUser = async (userId: string) => {
     console.log('error:', error)
   }
 }
+export const getPatient = async (userId: string) => {
+  try {
+    const patients = await databases.listDocuments(
+      DATABASE_ID!,
+      PATIENT_COLLECTION_ID!,
+      [Query.equal('userId', [userId])]
+    )
+    return parseStringify(patients.documents[0])
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
+    console.log('error:', error)
+  }
+}
 
 export const registerPatient = async ({
   identificationDocument,
