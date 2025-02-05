@@ -8,8 +8,7 @@ First, run the development server:
 2. 🔑 Tech Stack
 3. 🔋 Features
 4. 🤸 Quick Start
-5. 🕸️ Snippets (Code to Copy)
-6. 🔗 Assets
+5. 🔗 Assets
 7. 📂 More
 
 ## 🤖 Introduction
@@ -84,7 +83,10 @@ NEXT_PUBLIC_ADMIN_PASSKEY=111111
 Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the Appwrite website.
 
 Running the Project
+
 ```
 npm run dev
 ```
 Open <http://localhost:3000> in your browser to view the project.
+
+## 
