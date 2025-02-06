@@ -107,7 +107,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.INPUT}
             name="email"
             label="Email"
-            placeholder="mkanas@gmail.com"
+            placeholder="test@gmail.com"
             iconSrc="/assets/icons/email.svg"
             iconAlt="email"
           />

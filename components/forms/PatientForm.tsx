@@ -89,7 +89,7 @@ const PatientForm = () => {
           fieldType={FormFieldType.INPUT}
           name="name"
           label="Full Name"
-          placeholder="MK Anas"
+          placeholder="input name"
           iconSrc="/assets/icons/user.svg"
           iconAlt="user"
         />
@@ -98,7 +98,7 @@ const PatientForm = () => {
           fieldType={FormFieldType.INPUT}
           name="email"
           label="Email"
-          placeholder="mkanas@gmail.com"
+          placeholder="test@gmail.com"
           iconSrc="/assets/icons/email.svg"
           iconAlt="email"
         />
