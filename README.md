@@ -5,9 +5,9 @@
 First, run the development server:
 
 1. 🤖 [Introduction](#Introduction)
-2. 🔑 [Tech Stack](#Tech-Stack)
+2. 🔑 [Tech Stack](#Tech_Stack)
 3. 🔋 [Features](#Features)
-4. 🤸 [Quick Start](Quick-Start)
+4. 🤸 [Quick Start](Quick_Start)
 
 
 ## 🤖 Introduction
