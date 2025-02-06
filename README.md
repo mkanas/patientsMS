@@ -4,10 +4,10 @@
 
 First, run the development server:
 
-1. 🤖 [Introduction](#Introduction)
-2. 🔑 [Tech-Stack](#Tech-Stack)
-3. 🔋 [Features](#Features)
-4. 🤸 [Quick-Start](#Quick-Start)
+1. 🤖 [Introduction](#introduction)
+2. 🔑 [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
 
 ## 🤖 Introduction
