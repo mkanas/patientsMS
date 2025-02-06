@@ -4,7 +4,7 @@
 
 First, run the development server:
 
-1. 🤖 Introduction
+1. 🤖 <Introduction>
 2. 🔑 Tech Stack
 3. 🔋 Features
 4. 🤸 Quick Start
