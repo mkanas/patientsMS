@@ -4,12 +4,11 @@
 
 First, run the development server:
 
-1. 🤖 Introduction
-2. 🔑 Tech Stack
-3. 🔋 Features
-4. 🤸 Quick Start
-5. 🔗 Assets
-7. 📂 More
+1. 🤖 [Introduction](#introduction)
+2. 🔑 [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+
 
 ## 🤖 Introduction
 A Next.js-based healthcare patient management application that enables patients to seamlessly register, schedule, and manage their doctor appointments. It includes administrative tools for booking, confirming, and canceling appointments, along with SMS notification support
