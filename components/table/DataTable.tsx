@@ -36,8 +36,8 @@ export function DataTable<TData, TValue>({
   })
 
   return (
-    <div className="data-table ">
-      <Table className="shad-table">
+    <div className="data-table w-full overflow-x-auto ">
+      <Table className="shad-table min-w-full">
         <TableHeader className="bg-dark-200">
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id} className="shad-table-row-header">
