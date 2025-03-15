@@ -42,31 +42,12 @@ const PatientForm = () => {
   }: z.infer<typeof UserFormValidation>) {
     setIsLoading(true)
     try {
-      // You can use your backend API here to create a new user.
-      // Example:
-      // const createUser = async (userData: any) => {
-      //   const res = await fetch('/api/users', {
-      //     method: 'POST',
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //     },
-      //     body: JSON.stringify(userData),
-      //   })
-      //   return await res.json()
-      // }
-      // // Uncomment the following line and replace it with your actual API call.
-      // // await createUser(userData)
-      // // Redirect the user to the next page with the user's ID.
-      // // This is just an example, you may want to replace this with your own logic.
-      // // Example:
-      // // router.push(`/patients/${user.$id}/register`)
-      // // You can also use the following line if you want to store the user data in your local storage.
       const userData = {
         name,
         email,
         phone,
       }
-      console.log(userData)
+
       const user = await createUser(userData)
       if (user) router.push(`/patients/${user.$id}/register`)
     } catch (err) {

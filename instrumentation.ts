@@ -1,13 +1,15 @@
-import * as Sentry from '@sentry/nextjs';
+//third party  untuk menginisialisasi dan mengatur Sentry, menangkap error, dan melacak performa aplikasi
+
+import * as Sentry from '@sentry/nextjs'
 
 export async function register() {
   if (process.env.NEXT_RUNTIME === 'nodejs') {
-    await import('./sentry.server.config');
+    await import('./sentry.server.config')
   }
 
   if (process.env.NEXT_RUNTIME === 'edge') {
-    await import('./sentry.edge.config');
+    await import('./sentry.edge.config')
   }
 }
 
-export const onRequestError = Sentry.captureRequestError;
+export const onRequestError = Sentry.captureRequestError
